@@ -19,6 +19,7 @@ function addEventSaved() { // essa função adiciona evento que ao ser acionada,
   const elementoSaved = document.querySelector('#salvar-tarefas');
   elementoSaved.addEventListener('click', () => {
     localStorage.setItem('tasks', lista.innerHTML);
+    alpert('Lista Salva!')
   });
 }
 function addElementsSaved() { // essa função ao ser executada, trás o html salvo para a pagina

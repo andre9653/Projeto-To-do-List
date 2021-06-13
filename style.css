@@ -10,18 +10,19 @@
   background-color: rgb(128 128 128);
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+#header {
+  display: flex;
+}
 h1 {
   color: white;
   background-color: #46b1c9;
   padding: 40px;
   font-size: 3em;
-}
-
-p {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  width: 600px;
+  width: 100%;
 }
 
 .completed {
@@ -36,10 +37,10 @@ ol {
   border-radius: 5px;
   background-color: #46b1c9;
   list-style-position: inside;
-  margin: 0 auto 10px;
   padding: 20px;
-  width: 500px;
+  min-width: 30%;
   min-height: 300px;
+  width: 100%;
 }
 
 li {
@@ -49,16 +50,14 @@ li {
 
 #addTask {
   margin: 10px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 #texto-tarefa {
-  width: 40%;
-  margin: 0 auto 10px;
   padding: 12px 20px;
-  display: block;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
 }
 
 .button {
@@ -68,7 +67,6 @@ li {
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
@@ -82,3 +80,36 @@ li {
   border: 2px solid #008CBA;
   border-radius: 5px;
 }
+
+#funcionamento {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+#conteudo {
+  display: flex;
+  margin-left: 20px;
+  align-items: stretch;
+  justify-content: center;
+}
+
+#button {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.list {
+  text-align: center;
+}
+
+#list {
+  width: 50%;
+}
+
+#mid {
+  display: flex;
+  align-items: stretch;
+} 
