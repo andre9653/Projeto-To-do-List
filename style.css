@@ -34,12 +34,11 @@ button {
   box-shadow: 3px 3px 6px 0 rgba(0 , 0 , 0 , 0.2);
 }
 
-ol {
+#lista-tarefas {
   border-radius: 5px;
   list-style-position: inside;
   padding: 20px;
   min-width: 30%;
-  min-height: 300px;
   width: 100%;
   border: solid #46b1c9 10px;
 }
@@ -59,6 +58,10 @@ li {
   padding: 12px 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+#texto-tarefa:hover {
+  border-color: #008CBA;
 }
 
 .button {
@@ -106,11 +109,24 @@ li {
   text-align: center;
 }
 
+.list:hover {
+  background-color: #46b1c9;
+}
+
+.list:active {
+  background-color: #46b1c9;
+  color: white;
+}
+
 #list {
-  width: 50%;
+  align-items: center;
 }
 
 #mid {
   display: flex;
   align-items: stretch;
 } 
+
+input {
+  font-size: 16px;
+}
