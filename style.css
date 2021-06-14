@@ -28,6 +28,7 @@ h1 {
 
 .completed {
   text-decoration: line-through;
+  color: #ccc;
 }
 
 button {
